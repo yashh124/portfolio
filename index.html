@@ -411,40 +411,70 @@ footer{border-top:1px solid var(--border);padding:2.5rem 0;background:var(--bg-a
       <div class="group-title reveal"><span class="c">01</span><h3>Computer Vision</h3></div>
       <div class="grid">
         <div class="card reveal">
-          <div class="kicker">Pose Estimation</div><h4>Pose Clone</h4>
-          <p class="desc">Real-time human pose estimation that mirrors and clones body movements from a live camera feed.</p>
-          <div class="tech"><span>Python</span><span>OpenCV</span><span>MediaPipe</span></div>
-          <div class="links"><a href="https://github.com/yashh124" target="_blank" rel="noopener">GitHub ↗</a><a href="#" class="muted">Demo</a></div>
+          <div class="kicker">Pose Estimation</div><h4>Neon Pose Mirror Clone</h4>
+          <p class="desc">Real-time full-body pose tracking that renders a neon skeleton plus a mirrored clone beside you, with visibility filtering so low-confidence joints never draw.</p>
+          <div class="tech"><span>Python</span><span>OpenCV</span><span>MediaPipe Pose</span></div>
+          <div class="links"><a href="https://github.com/yashh124/Neon-Pose-Mirror-Clone" target="_blank" rel="noopener">GitHub ↗</a><a href="https://github.com/yashh124/computer-vision-projects/tree/main/pose_clone" target="_blank" rel="noopener">Source ↗</a></div>
+        </div>
+        <div class="card reveal">
+          <div class="kicker">XR Interface</div><h4>Stark Core — Gesture-Controlled HUD</h4>
+          <p class="desc">A two-handed holographic interface: the left hand moves and scales a rotating hex shell, the right pinches to extract and resize an energy core, with face-tracked targeting reticles.</p>
+          <div class="tech"><span>Python</span><span>OpenCV</span><span>MediaPipe</span><span>3D Projection</span></div>
+          <div class="links"><a href="https://github.com/yashh124/Stark-Core-XR-Interface-Gesture-Controlled-HUD-" target="_blank" rel="noopener">GitHub ↗</a><a href="https://github.com/yashh124/computer-vision-projects/tree/main/hand" target="_blank" rel="noopener">Source ↗</a></div>
+        </div>
+        <div class="card reveal">
+          <div class="kicker">Vision + Voice</div><h4>Iron Vision — JARVIS HUD</h4>
+          <p class="desc">Face-anchored 3D HUD driven by voice commands (activate, lock, zoom, reset) with hand-gesture rotation. Speech runs on its own COM-initialised thread so the render loop never stalls.</p>
+          <div class="tech"><span>Python</span><span>OpenCV</span><span>SpeechRecognition</span><span>Win32 SAPI</span></div>
+          <div class="links"><a href="https://github.com/yashh124/computer-vision-projects/tree/main/iron_vision" target="_blank" rel="noopener">GitHub ↗</a><a href="https://github.com/yashh124/computer-vision-projects#the-demos" target="_blank" rel="noopener">Docs ↗</a></div>
+        </div>
+        <div class="card reveal">
+          <div class="kicker">Audio-Reactive CV</div><h4>Pose-Controlled 3D Light Sculpture</h4>
+          <p class="desc">Generative light rings driven by the body: arm span sets scale, shoulder angle sets rotation, movement speed sets brightness, and live microphone energy drives colour and pulse.</p>
+          <div class="tech"><span>Python</span><span>MediaPipe Pose</span><span>sounddevice</span><span>NumPy</span></div>
+          <div class="links"><a href="https://github.com/yashh124/computer-vision-projects/tree/main/Pose-Controlled%203D%20Light%20Sculpture" target="_blank" rel="noopener">GitHub ↗</a><a href="https://github.com/yashh124/computer-vision-projects#the-demos" target="_blank" rel="noopener">Docs ↗</a></div>
         </div>
         <div class="card reveal">
           <div class="kicker">Gesture Recognition</div><h4>Rock Paper Scissors</h4>
-          <p class="desc">Play against the computer using live hand-gesture recognition — no clicks, fully camera-driven.</p>
+          <p class="desc">Play the computer with hand gestures alone. Uses a stability buffer so a move only counts once held steady, with handedness-aware finger counting for either hand.</p>
           <div class="tech"><span>Python</span><span>OpenCV</span><span>MediaPipe</span></div>
-          <div class="links"><a href="https://github.com/yashh124" target="_blank" rel="noopener">GitHub ↗</a><a href="#" class="muted">Demo</a></div>
-        </div>
-        <div class="card reveal">
-          <div class="kicker">Vision + Voice Assistant</div><h4>Iron Vision + Jarvis</h4>
-          <p class="desc">An assistant combining computer-vision overlays with a voice-controlled agent for commands and automation.</p>
-          <div class="tech"><span>Python</span><span>OpenCV</span><span>Speech</span><span>Automation</span></div>
-          <div class="links"><a href="https://github.com/yashh124" target="_blank" rel="noopener">GitHub ↗</a><a href="#" class="muted">Demo</a></div>
-        </div>
-        <div class="card reveal">
-          <div class="kicker">Conversational AI</div><h4>AI Interview Simulator</h4>
-          <p class="desc">Simulates realistic interviews — asks questions, captures responses and returns AI-driven feedback for candidate prep.</p>
-          <div class="tech"><span>Python</span><span>NLP</span><span>Speech</span><span>LLM</span></div>
-          <div class="links"><a href="https://github.com/yashh124" target="_blank" rel="noopener">GitHub ↗</a><a href="#" class="muted">Demo</a></div>
+          <div class="links"><a href="https://github.com/yashh124/stone-paper-scissors-opencv" target="_blank" rel="noopener">GitHub ↗</a><a href="https://github.com/yashh124/computer-vision-projects/tree/main/stonepaper" target="_blank" rel="noopener">Source ↗</a></div>
         </div>
         <div class="card reveal">
           <div class="kicker">Gesture Recognition</div><h4>Hand Gesture Drawing</h4>
-          <p class="desc">Touchless drawing canvas controlled entirely by finger movements tracked in real time.</p>
+          <p class="desc">Touchless canvas: index finger draws, two fingers move the cursor, an open palm clears and a pinch erases. Masked compositing keeps the camera feed at full brightness.</p>
           <div class="tech"><span>Python</span><span>OpenCV</span><span>MediaPipe</span></div>
-          <div class="links"><a href="https://github.com/yashh124" target="_blank" rel="noopener">GitHub ↗</a><a href="#" class="muted">Demo</a></div>
+          <div class="links"><a href="https://github.com/yashh124/computer-vision-projects/tree/main/draw%20cv" target="_blank" rel="noopener">GitHub ↗</a><a href="https://github.com/yashh124/computer-vision-projects#the-demos" target="_blank" rel="noopener">Docs ↗</a></div>
         </div>
         <div class="card reveal">
-          <div class="kicker">Interactive CV</div><h4>CV Birthday Interactive</h4>
-          <p class="desc">An interactive experience driven by face detection and gesture-triggered animations.</p>
-          <div class="tech"><span>Python</span><span>OpenCV</span><span>Face Detection</span></div>
-          <div class="links"><a href="https://github.com/yashh124" target="_blank" rel="noopener">GitHub ↗</a><a href="#" class="muted">Docs</a></div>
+          <div class="kicker">AR Effects</div><h4>Hand AR — Energy Particles</h4>
+          <p class="desc">An 80-particle energy field and hologram HUD orbiting your palm, reacting to hand openness and velocity, with an optional motion-trail buffer.</p>
+          <div class="tech"><span>Python</span><span>OpenCV</span><span>MediaPipe</span><span>Particle System</span></div>
+          <div class="links"><a href="https://github.com/yashh124/computer-vision-projects/tree/main/hand_ar" target="_blank" rel="noopener">GitHub ↗</a><a href="https://github.com/yashh124/computer-vision-projects#the-demos" target="_blank" rel="noopener">Docs ↗</a></div>
+        </div>
+        <div class="card reveal">
+          <div class="kicker">Multi-Modal Tracking</div><h4>AI Superpower Simulator</h4>
+          <p class="desc">Simultaneous hand and face-mesh tracking driving a rotating wireframe hologram, two-handed scaling and steering, and energy beams fired from a fully open palm.</p>
+          <div class="tech"><span>Python</span><span>OpenCV</span><span>Face Mesh</span><span>MediaPipe</span></div>
+          <div class="links"><a href="https://github.com/yashh124/ai-ml-projects/tree/main/cvv/superpower_sim" target="_blank" rel="noopener">GitHub ↗</a><a href="https://github.com/yashh124/ai-ml-projects/tree/main/cvv/superpower_sim#readme" target="_blank" rel="noopener">Docs ↗</a></div>
+        </div>
+        <div class="card reveal">
+          <div class="kicker">3D + Gesture</div><h4>Holographic Car Viewer</h4>
+          <p class="desc">An exploded-view 3D car rendered in OpenGL that assembles and separates as you move your hands apart, with per-part spec sheets and mouse/keyboard camera control.</p>
+          <div class="tech"><span>Python</span><span>PyOpenGL</span><span>Pygame</span><span>MediaPipe</span></div>
+          <div class="links"><a href="https://github.com/yashh124/ai-ml-projects/tree/main/vehicle" target="_blank" rel="noopener">GitHub ↗</a><a href="https://github.com/yashh124/ai-ml-projects/tree/main/vehicle#readme" target="_blank" rel="noopener">Docs ↗</a></div>
+        </div>
+        <div class="card reveal">
+          <div class="kicker">WebGL + Hand Tracking</div><h4>Voxel Editor</h4>
+          <p class="desc">Build glowing 3D blocks in mid-air with a pinch gesture — Three.js with bloom post-processing and MediaPipe Hands running entirely in the browser via WASM.</p>
+          <div class="tech"><span>JavaScript</span><span>Three.js</span><span>MediaPipe WASM</span><span>WebGL</span></div>
+          <div class="links"><a href="https://github.com/yashh124/ai-ml-projects/tree/main/voxel" target="_blank" rel="noopener">GitHub ↗</a><a href="https://github.com/yashh124/ai-ml-projects/tree/main/voxel#readme" target="_blank" rel="noopener">Docs ↗</a></div>
+        </div>
+        <div class="card reveal">
+          <div class="kicker">Gesture Recognition</div><h4>Two-Hand Thumbs-Up Detector</h4>
+          <p class="desc">Detects a genuine thumbs-up — thumb extended and all four fingers curled — on both hands simultaneously, using scale-invariant thresholds normalised by hand size.</p>
+          <div class="tech"><span>Python</span><span>OpenCV</span><span>MediaPipe</span></div>
+          <div class="links"><a href="https://github.com/yashh124/computer-vision-projects/tree/main/vision" target="_blank" rel="noopener">GitHub ↗</a><a href="https://github.com/yashh124/computer-vision-projects#the-demos" target="_blank" rel="noopener">Docs ↗</a></div>
         </div>
       </div>
     </div>
@@ -466,22 +496,34 @@ footer{border-top:1px solid var(--border);padding:2.5rem 0;background:var(--bg-a
           <div class="links"><a href="https://github.com/yashh124" target="_blank" rel="noopener">GitHub ↗</a><a href="#research" class="muted">Paper</a></div>
         </div>
         <div class="card reveal">
-          <div class="kicker">Speech &amp; NLP</div><h4>Video Translation</h4>
-          <p class="desc">Translates spoken video content from Hindi to English and other languages, combining speech-to-text, translation and re-voicing.</p>
-          <div class="tech"><span>Python</span><span>Speech-to-Text</span><span>Translation</span><span>NLP</span></div>
-          <div class="links"><a href="https://github.com/yashh124" target="_blank" rel="noopener">GitHub ↗</a><a href="#" class="muted">Demo</a></div>
+          <div class="kicker">Speech &amp; NLP</div><h4>Video Translation &amp; AI Dubbing</h4>
+          <p class="desc">Four-stage pipeline that re-voices a video in English: Whisper transcribes and translates speech in one pass, gTTS synthesises narration, and moviepy muxes it back onto the original footage.</p>
+          <div class="tech"><span>Python</span><span>Whisper</span><span>MarianMT</span><span>gTTS</span><span>moviepy</span></div>
+          <div class="links"><a href="https://github.com/yashh124/ai-ml-projects/tree/main/aiml" target="_blank" rel="noopener">GitHub ↗</a><a href="https://github.com/yashh124/ai-ml-projects/tree/main/aiml#readme" target="_blank" rel="noopener">Docs ↗</a></div>
         </div>
         <div class="card reveal">
-          <div class="kicker">Audio ML</div><h4>Noise Detection System</h4>
-          <p class="desc">Real-time environmental noise monitoring and classification for smart-city applications.</p>
-          <div class="tech"><span>Python</span><span>ML</span><span>Audio</span></div>
-          <div class="links"><a href="https://github.com/yashh124" target="_blank" rel="noopener">GitHub ↗</a><a href="#" class="muted">Demo</a></div>
+          <div class="kicker">Speech &amp; NLP</div><h4>Offline Video Translation</h4>
+          <p class="desc">A fully offline variant of the dubbing pipeline — Whisper for speech-to-English, local pyttsx3 narration and direct ffmpeg stream mapping, so it runs with no internet connection.</p>
+          <div class="tech"><span>Python</span><span>Whisper</span><span>pyttsx3</span><span>FFmpeg</span></div>
+          <div class="links"><a href="https://github.com/yashh124/ai-ml-projects/tree/main/video%20ai" target="_blank" rel="noopener">GitHub ↗</a><a href="https://github.com/yashh124/ai-ml-projects/tree/main/video%20ai#readme" target="_blank" rel="noopener">Docs ↗</a></div>
         </div>
         <div class="card reveal">
-          <div class="kicker">Anomaly Detection</div><h4>Anomaly Detection System</h4>
-          <p class="desc">Detects unusual patterns in data streams for industrial safety, with real-time alerting.</p>
-          <div class="tech"><span>Python</span><span>scikit-learn</span></div>
-          <div class="links"><a href="https://github.com/yashh124" target="_blank" rel="noopener">GitHub ↗</a><a href="#" class="muted">Report</a></div>
+          <div class="kicker">Signal Processing</div><h4>FFT Signal Denoising</h4>
+          <p class="desc">Interactive DSP workbench for radar and sensor signals: FFT low-pass filtering with live SNR-before/after metrics, spectrum visualisation and reproducible seeded noise.</p>
+          <div class="tech"><span>Python</span><span>SciPy</span><span>NumPy</span><span>Streamlit</span></div>
+          <div class="links"><a href="https://github.com/yashh124/signal-denoising-dsp" target="_blank" rel="noopener">GitHub ↗</a><a href="https://github.com/yashh124/ai-ml-projects/tree/main/noise%20reduction" target="_blank" rel="noopener">Source ↗</a></div>
+        </div>
+        <div class="card reveal">
+          <div class="kicker">Anomaly Detection</div><h4>Sensor Anomaly Detection</h4>
+          <p class="desc">Unsupervised Isolation Forest over uploaded sensor CSVs with tunable contamination, per-record anomaly scores, flagged-record export and time-series visualisation for predictive maintenance.</p>
+          <div class="tech"><span>Python</span><span>scikit-learn</span><span>Pandas</span><span>Streamlit</span></div>
+          <div class="links"><a href="https://github.com/yashh124/anomaly-detection-system" target="_blank" rel="noopener">GitHub ↗</a><a href="https://github.com/yashh124/ai-ml-projects/tree/main/anomaly" target="_blank" rel="noopener">Source ↗</a></div>
+        </div>
+        <div class="card reveal">
+          <div class="kicker">Device-Free Sensing</div><h4>SENSE-WIFI — Human Activity Sensing</h4>
+          <p class="desc">Detects presence and activity from Wi-Fi RSSI fluctuations with no camera and no wearable. Sliding-window feature extraction streams over a WebSocket to a live 10 Hz dashboard.</p>
+          <div class="tech"><span>Python</span><span>FastAPI</span><span>WebSockets</span><span>NumPy</span><span>Chart.js</span></div>
+          <div class="links"><a href="https://github.com/yashh124/ai-ml-projects/tree/main/wall" target="_blank" rel="noopener">GitHub ↗</a><a href="https://github.com/yashh124/ai-ml-projects/tree/main/wall#readme" target="_blank" rel="noopener">Docs ↗</a></div>
         </div>
         <div class="card reveal">
           <div class="kicker">Robotics</div><h4>Obstacle Avoidance Robot</h4>
@@ -490,10 +532,10 @@ footer{border-top:1px solid var(--border);padding:2.5rem 0;background:var(--bg-a
           <div class="links"><a href="https://drive.google.com/file/d/1sEDDx6hyOoLnFrGhEYvul5iV9oMPF_Vt/view" target="_blank" rel="noopener">Line ↗</a><a href="https://drive.google.com/file/d/119tCBHmcMLHxXLM3BlZls36olc0k6j2w/view" target="_blank" rel="noopener">Obstacle ↗</a></div>
         </div>
         <div class="card reveal">
-          <div class="kicker">Algorithms</div><h4>Sudoku Solver</h4>
-          <p class="desc">Interactive solver using a backtracking algorithm, with multiple difficulty levels.</p>
-          <div class="tech"><span>Python</span><span>Pygame</span></div>
-          <div class="links"><a href="https://github.com/yashh124" target="_blank" rel="noopener">GitHub ↗</a><a href="#" class="muted">Play</a></div>
+          <div class="kicker">Algorithms</div><h4>Sudoku Pro</h4>
+          <p class="desc">Generates valid puzzles by seeding diagonal boxes and solving with backtracking, then removes cells per difficulty. Live move validation, mistake counter and one-click solve.</p>
+          <div class="tech"><span>Python</span><span>Tkinter</span><span>Backtracking</span></div>
+          <div class="links"><a href="https://github.com/yashh124/SUDOKU" target="_blank" rel="noopener">GitHub ↗</a><a href="https://github.com/yashh124/ai-ml-projects/tree/main/sudoku" target="_blank" rel="noopener">Source ↗</a></div>
         </div>
         <div class="card reveal">
           <div class="kicker">Finance ML</div><h4>Stock Prediction</h4>
@@ -504,9 +546,34 @@ footer{border-top:1px solid var(--border);padding:2.5rem 0;background:var(--bg-a
       </div>
     </div>
 
+    <!-- WEB / SYSTEMS -->
+    <div class="proj-group">
+      <div class="group-title reveal"><span class="c">03</span><h3>Web &amp; Systems</h3></div>
+      <div class="grid">
+        <div class="card reveal">
+          <div class="kicker">Full-Stack</div><h4>CoreInventory — Inventory Platform</h4>
+          <p class="desc">FastAPI + SQLAlchemy backend with a Streamlit front end covering receipts, deliveries, transfers and adjustments, with a validated stock ledger and low-stock alerting.</p>
+          <div class="tech"><span>Python</span><span>FastAPI</span><span>SQLAlchemy</span><span>Streamlit</span><span>SQLite</span></div>
+          <div class="links"><a href="https://github.com/yashh124/computer-vision-projects/tree/main/h_project" target="_blank" rel="noopener">GitHub ↗</a><a href="https://github.com/yashh124/computer-vision-projects#coreinventory-h_project" target="_blank" rel="noopener">Docs ↗</a></div>
+        </div>
+        <div class="card reveal">
+          <div class="kicker">Generative Web</div><h4>Sentience — Behavioural Interface</h4>
+          <p class="desc">An ambient page that reads mouse velocity, direction entropy and click cadence to infer a mood, then shifts its palette, blur and a generative Web Audio drone in response.</p>
+          <div class="tech"><span>JavaScript</span><span>Web Audio API</span><span>ES Modules</span><span>CSS</span></div>
+          <div class="links"><a href="https://github.com/yashh124/ai-ml-projects/tree/main/tp" target="_blank" rel="noopener">GitHub ↗</a><a href="https://github.com/yashh124/ai-ml-projects/tree/main/tp#readme" target="_blank" rel="noopener">Docs ↗</a></div>
+        </div>
+        <div class="card reveal">
+          <div class="kicker">Developer Tooling</div><h4>CV Toolkit &amp; Environment Doctor</h4>
+          <p class="desc">Shared library behind the vision demos — resilient multi-backend camera acquisition, FPS instrumentation, safe shutdown — plus a diagnostic that verifies packages, camera and microphone in one command.</p>
+          <div class="tech"><span>Python</span><span>OpenCV</span><span>Packaging</span></div>
+          <div class="links"><a href="https://github.com/yashh124/computer-vision-projects/blob/main/cvkit.py" target="_blank" rel="noopener">GitHub ↗</a><a href="https://github.com/yashh124/computer-vision-projects/blob/main/doctor.py" target="_blank" rel="noopener">Doctor ↗</a></div>
+        </div>
+      </div>
+    </div>
+
     <!-- DATA -->
     <div class="proj-group">
-      <div class="group-title reveal"><span class="c">03</span><h3>Data Analytics</h3></div>
+      <div class="group-title reveal"><span class="c">04</span><h3>Data Analytics</h3></div>
       <div class="grid">
         <div class="card reveal">
           <div class="kicker">Power BI</div><h4>SN-CORP Sales Dashboard</h4>
